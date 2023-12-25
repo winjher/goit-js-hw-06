@@ -1,0 +1,40 @@
+body{
+    color:red;
+    font-family: Tahoma;
+    
+}
+
+header{
+    
+}
+
+section{
+    border-color: red;
+}
+
+main{
+    
+}
+footer{
+    
+}
+div{
+    padding: 100px;
+}
+
+.domtraversal{
+    padding:0px;
+}
+.btnLog{
+    width: 192px;
+}
+
+.image-list{
+    font-display: flex;
+    gap: :50px;
+    margin-left: 40px;
+}
+
+.center{
+    align-content: center;
+}
