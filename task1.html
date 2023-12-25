@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOMTraversal</title>
+    <link rel="stylesheet" href="/storage/emulated/0/Documents/HW6-JavaScript/css/taskstyle.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <a href="task2.html">Go to</a>
+      <section>
+          <h2 id="categories" class="categories"></h2>
+          <ul class="list-categories" id="list-categories">
+
+              <li class="list-animal-item">                <div class="domtraversal">
+          <h2 class="" id="animal100">Animals</h2>
+          <ul class="list-animal" id="list-animal">
+              <li class="" id="animal101">Cat</li>
+              <li class="" id="animal102">Hamster</li>
+              <li class="" id="animal103">Horse</li>
+              <li class="" id="animal104">Parrot</li>
+          </ul>
+      </div></li>
+              <li class="list-food-item">      <div class="domtraversal">
+          <h2 class="" id="food200">Products</h2>
+          <ul class="list-products" id="list-products">
+              <li class="" id="food201">Bread</li>
+              <li class="" id="food202">Parsely</li>
+              <li class="" id="food203">Cheese</li>
+
+          </ul>
+      </div></li>
+            <li class="list-tech-item">      <div class="domtraversal">
+          <h2 class="" id="tech300">Technologies</h2>
+          <ul class="list-tech" id="list-tech">
+              <li class="" id="tech301">HTML</li>
+              <li class="" id="tech302">CSS</li>
+              <li class="" id="tech303">JavaScript</li>
+              <li class="" id="tech304">React</li>
+              <li class="" id="tech305">Nodejs</li>
+          </ul>
+      </div></li>
+          </ul>
+
+
+      </section>
+
+      
+  <script src="/storage/emulated/0/Documents/HW6-JavaScript/js/tasks.js" type="text/javascript" charset="utf-8">
+  </script>
+  <script src="js/tasks.js" type="text/javascript" charset="utf-8">
+  </script>
+
+  <script type="text/javascript" charset="utf-8">
+  function Categories(category){
+      category=document.getElementById("categories").innerHTML;
+      var category=document.querySelector('.categories');
+      var categories = document.getElementById('list-categories').children.length;
+      console.log("Number of Categories: ",categories);
+      
+  }
+  Categories("Categories")
+  
+  //console.log("Number of Categories:",)
+  function Animal(myAnimal){
+      
+      myAnimal = document.getElementById("animal100").innerHTML;
+      var animal100=document.getElementById("animal100").firstChild.nodeValue;
+      console.log("Category:",animal100);
+      var animals = document.getElementById('list-animal').children.length;
+      console.log("Elements: ",animals);
+      //Lists of animals
+      //const animalList = document.querySelector('.list-animal');
+      
+      //const animalNodes=animalList.childNodes;
+      //console.log("Elements:",animalNodes)
+  }
+Animal("Category")
+
+  function Food(myFood){
+      
+      myFood = document.getElementById("food200").innerHTML;
+      var food200=document.getElementById("food200").firstChild.nodeValue;
+      console.log("Category:",food200);
+      var foods = document.getElementById('list-products').children.length;
+      console.log("Elements: ",foods);
+     //List of Foods
+      //const foodList = document.querySelector('.list-products');
+      
+      //const foodNodes=foodList.childNodes;
+      //console.log("Elements:",foodNodes)
+  }
+Food("Category")
+
+function Technology(myTech){
+      
+      myTech = document.getElementById("tech300").innerHTML;
+      var tech300=document.getElementById("tech300").firstChild.nodeValue;
+      console.log("Category:",tech300);
+      var techs = document.getElementById('list-tech').children.length;
+      console.log("Elements: ",techs);
+      
+      //List of technology
+      //const techList = document.querySelector('.list-tech');
+      
+      //const techNodes=techList.childNodes;
+      //console.log("Elements:",techNodes)
+  }
+Technology("Category")
+
+
+  </script>
+  </body>
+</html>
