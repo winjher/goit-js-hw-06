@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/storage/emulated/0/Documents/HW6-JavaScript/css/taskstyle.css" type="text/css" media="all" />
+
+  </head>
+  <body>
+      <a href="task3.html">Go back</a>
+      <a href="task5.html">Next</a>
+
+     <br />
+      <div class="container">
+          <button id="increment" type="submit"onclick="Calcu()">-1</button> 
+          <h4 class="center" id="total-count">0</h4>
+          <button id="decrement" type="submit"onclick="Calcu()">+1</button>
+      </div>
+      
+  <script src="/storage/emulated/0/Documents/HW6-JavaScript/task4.js" type="text/javascript" charset="utf-8">
+  function Calcu(){
+        // Select total count
+  const totalCount = document.getElementById("total-count");
+
+// Variable to track count
+var count = 0;
+
+// Display initial count value
+totalCount.innerHTML = count;
+const handleIncrement = () => {
+  count++;
+  totalCount.innerHTML = count;
+};
+const handleDecrement = () => {
+  count--;
+  totalCount.innerHTML = count;
+};
+// Select increment and decrement buttons
+const incrementCount = document.getElementById("increment");
+const decrementCount = document.getElementById("decrement");
+
+// Add click event to buttons
+incrementCount.addEventListener("click", handleIncrement);
+decrementCount.addEventListener("click", handleDecrement);
+  }
+Calcu()
+  </script>
+  
+  </body>
+</html>
