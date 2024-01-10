@@ -1,0 +1,63 @@
+body{
+    color:red;
+    font-family: Tahoma;
+    
+}
+
+.list-task{
+    text-decoration: none;
+}
+.card{
+    position: relative;
+    flex-direction: column;
+    display: table;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid rgba(47, 209, 14, 0.125);
+    /* Add rounded corners to the top left and the top right corner of the image */
+    border-radius: 0.35rem;
+    padding-bottom: 20px; 
+    margin: 20px;
+    margin: 20px;
+    padding-top: 20px;
+    padding: 16px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+header{
+    
+}
+
+section{
+    border-color: rgb(16, 1, 1);
+}
+
+main{
+    
+}
+footer{
+    
+}
+div{
+    padding: 100px;
+}
+
+.domtraversal{
+    padding:0px;
+}
+.btnLog{
+    width: 192px;
+}
+
+.image-list{
+    font-display: flex;
+    gap: 50px;
+    margin-left: 40px;
+}
+
+.center{
+    align-content: center;
+}
