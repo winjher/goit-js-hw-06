@@ -1,5 +1,5 @@
 
-  <script type="text/javascript" charset="utf-8">
+//tasks1
     function Categories(category) {
       category = document.getElementById("categories").innerHTML;
       var category = document.querySelector('.categories');
@@ -67,7 +67,3 @@
     }
     Technology("Category")
 
-
-
-
-  </script>
