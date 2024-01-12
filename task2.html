@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
-  </head>
-  <body>
-      <a href="task1.html">Go back</a>
-      <a href="task3.html">Next</a>
-    
-      <div>
-          <h2 class="" id="vegesTables">Vegetables</h2>
-          <ul id="vegetables">
-              <li class="veges" id="veges">Potatoes</li>
-              <li class="veges" id="veges">Mushrooms</li>
-              <li class="veges" id="veges">Garlic</li>
-              <li class="veges" id="veges">Tomatoes</li>
-              <li class="veges" id="veges">Herbs</li>
-              <li class="veges" id="veges">Condiments</li>
+</head>
 
-          </ul>
-          <button type="submit" onclick="Vegetables()">Click Here</button>
-      </div>
-      
+<body>
+    <section>
+        <div class="container-fluid card">
+            <button type="submit" class="btn-back"><a href="task1.html">Previous</a></button>
+            <button type="submit" class="btn-next"><a href="task3.html">Next</a></button>
+            <div class="panel-container">
 
-  <script src="js/tasks.js" type="text/javascript" charset="utf-8">
-  </script>
-  <script type="text/javascript" charset="utf-8">
-  var myVeges = document.getElementById("vegetables").innerHTML;
-      function Vegetables(){
-          
-          let vegesparent=document.getElementById("vegetables");
-          let vegeschild=document.getElementsByClassName(".veges");
-          let newEl=document.createElement("li");
-          newEl.innerHTML="Papaya";
-          vegesparent.insertBefore(newEl, veges[0]);
-          console.log("myVeges");
-      }
-      Vegetables("")
-  </script>
-  
-  </body>
+                    <h2 class="" id="vegesTables">Vegetables</h2>
+                    <ul id="ingredients">
+                        <li class="veges" id="veges">Potatoes</li>
+                        <li class="veges" id="veges">Mushrooms</li>
+                        <li class="veges" id="veges">Garlic</li>
+                        <li class="veges" id="veges">Tomatoes</li>
+                        <li class="veges" id="veges">Herbs</li>
+                        <li class="veges" id="veges">Condiments</li>
+
+                    </ul>
+                    <button type="submit" onclick="Vegetables()">Click Here</button>
+                </div>
+
+    </section>
+    <script src="js/tasks.js" type="text/javascript" charset="utf-8">
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        var myVeges = document.getElementById("vegetables").innerHTML;
+        function Vegetables() {
+
+            let vegesparent = document.getElementById("vegetables");
+            let vegeschild = document.getElementsByClassName(".veges");
+            let newEl = document.createElement("li");
+            newEl.innerHTML = "Papaya";
+            vegesparent.insertBefore(newEl, veges[0]);
+            console.log("myVeges");
+        }
+        Vegetables("")
+    </script>
+
+</body>
+
 </html>

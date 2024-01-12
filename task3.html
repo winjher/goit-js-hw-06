@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
-  </head>
-  <body>
-      <a href="task2.html">Go back</a>
-      <a href="task4.html">Next</a>
-     
-      <div>
-          <h2 class="images-list" id="image-container">Images</h2>
-         
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <section>
+    <div class="container-fluid card">
+      <button type="submit" class="btn-back"><a href="task2.html">Previous</a></button>
+      <button type="submit" class="btn-next"><a href="task4.html">Next</a></button>
+      <div class="panel-container">
+
+        <ul class="gallery">
+          <li class="images-list" id="image-container">Images</li>
+        </ul>
       </div>
-      
-   <script src="js/tasks.js" type="text/javascript" charset="utf-8">
+    </div>
+  </section>
+
+  <script src="js/tasks.js" type="text/javascript" charset="utf-8">
   </script>
   <script>
 
-        const images = [
-            'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260',
-            'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260',
-            'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260',
+    const images = [
+      {
+        url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+        alt: "White and Black Long Fur Cat",
+
+        url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+        alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+
+        url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+        alt: "Group of Horses Running",
+      },
+    ];
 
 
-        ];
+    const container = document.getElementById('image-container');
 
+    for (let i = 0; i < images.length; i++) {
 
-        const container = document.getElementById('image-container');
+      const img = document.createElement('img');
 
-        for (let i = 0; i < images.length; i++) {
+      img.src = images[i];
 
-            const img = document.createElement('img');
+      container.appendChild(img);
 
-            img.src = images[i];
+    }
 
-            container.appendChild(img);
+  </script>
 
-        }
+</body>
 
-    </script>
-  
-  </body>
 </html>

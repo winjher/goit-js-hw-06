@@ -1,11 +1,35 @@
+:root{
+    --bs-blue: #0d6efd;
+    --bs-orange: #fd7e14;
+}
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body{
-    color:red;
+    color:rgb(14, 12, 12);
     font-family: Tahoma;
     
 }
+.btn-back{
+    color: rgb(230, 223, 223);
+    background-color: var(--bs-blue);
+}
 
-.list-task{
+.btn-next{
+    color: rgb(12, 12, 12);
+    background-color: var(--bs-orange);
+}
+.btn-next,
+.btn-back, a{
     text-decoration: none;
+    border: 0px;
+    border-radius: 4px;
+    padding: 4px;
+    margin: auto;
 }
 .card{
     position: relative;
@@ -23,16 +47,25 @@ body{
     margin: 20px;
     padding-top: 20px;
     padding: 16px;
+   
+}
+.panel-container{
+    padding: 20px;
+    margin: 20px;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+li{
+    list-style: none;
+}
 header{
     
 }
 
 section{
     border-color: rgb(16, 1, 1);
+    padding: 120px;
 }
 
 main{

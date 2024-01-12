@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DOMTraversal</title>
   <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
 </head>
+
 <body>
-  <a href="index.html">Go home</a>
-  <a href="task2.html">Go to</a>
+
+
+
   <section>
-    <!-- <h2 id="categories" class="categories"></h2> -->
-    <ul id="categories">
-      <li class="item">
-        <h2 class="categories" id="animal100">Animals</h2>
-        <ul class="list-animal" id="list-animal">
-          <li class="" id="animal101">Cat</li>
-          <li class="" id="animal102">Hamster</li>
-          <li class="" id="animal103">Horse</li>
-          <li class="" id="animal104">Parrot</li>
+
+    <div class="container-fluid card">
+      <button type="submit" class="btn-back"><a href="index.html">Home</a></button>
+      <button type="submit" class="btn-next"><a href="task2.html">Next</a></button>
+      <div class="panel-container">
+
+
+        <ul id="categories">
+          <li class="item">
+            <h2 class="categories" id="animal100">Animals</h2>
+            <ul class="list-animal" id="list-animal">
+              <li class="" id="animal101">Cat</li>
+              <li class="" id="animal102">Hamster</li>
+              <li class="" id="animal103">Horse</li>
+              <li class="" id="animal104">Parrot</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2 id="food200">Products</h2>
+            <ul class="list-products" id="list-products">
+              <li class="" id="food201">Bread</li>
+              <li class="" id="food202">Parsely</li>
+              <li class="" id="food203">Cheese</li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2 id="tech300">Technologies</h2>
+            <ul class="list-tech" id="list-tech">
+              <li class="" id="tech301">HTML</li>
+              <li class="" id="tech302">CSS</li>
+              <li class="" id="tech303">JavaScript</li>
+              <li class="" id="tech304">React</li>
+              <li class="" id="tech305">Nodejs</li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li class="item">
-        <h2 id="food200">Products</h2>
-        <ul class="list-products" id="list-products">
-          <li class="" id="food201">Bread</li>
-          <li class="" id="food202">Parsely</li>
-          <li class="" id="food203">Cheese</li>
-        </ul>
-      </li>
-      <li class="item">
-        <h2 id="tech300">Technologies</h2>
-        <ul class="list-tech" id="list-tech">
-          <li class="" id="tech301">HTML</li>
-          <li class="" id="tech302">CSS</li>
-          <li class="" id="tech303">JavaScript</li>
-          <li class="" id="tech304">React</li>
-          <li class="" id="tech305">Nodejs</li>
-        </ul>
-      </li>
-    </ul>
+      </div>
+    </div>
   </section>
 
   <script src="js/tasks.js" type="text/javascript" charset="utf-8">
   </script>
 </body>
+
 </html>

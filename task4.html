@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
 
-  </head>
-  <body>
-      <a href="task3.html">Go back</a>
-      <a href="task5.html">Next</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
 
-     <br />
-      <div class="container">
-          <button id="increment" type="submit"onclick="Calcu()">-1</button> 
-          <h4 class="center" id="total-count">0</h4>
-          <button id="decrement" type="submit"onclick="Calcu()">+1</button>
+</head>
+
+<body>
+  <section>
+    <div class="container-fluid card">
+      <button type="submit" class="btn-back"><a href="task3.html">Previous</a></button>
+      <button type="submit" class="btn-next"><a href="task5.html">Next</a></button>
+      <div class="panel-container">
+
+        <br />
+        <div id="counter">
+          <button type="button" id="increment" data-action="decrement" onclick="Calcu()">-1</button>
+          <span id="value">0</span>
+          <button type="button" id="decrement" data-action="increment" onclick="Calcu()">+1</button>
+        </div>
       </div>
-      
+    </div>
+
+  </section>
+
+
   <script src="js/tasks.js" type="text/javascript" charset="utf-8">
   </script>
-  function Calcu(){
-        // Select total count
-  const totalCount = document.getElementById("total-count");
 
-// Variable to track count
-var count = 0;
+  <script>
 
-// Display initial count value
-totalCount.innerHTML = count;
-const handleIncrement = () => {
-  count++;
-  totalCount.innerHTML = count;
-};
-const handleDecrement = () => {
-  count--;
-  totalCount.innerHTML = count;
-};
-// Select increment and decrement buttons
-const incrementCount = document.getElementById("increment");
-const decrementCount = document.getElementById("decrement");
+    function Calcu() {
+      // Select total count
+      const totalCount = document.getElementById("total-count");
 
-// Add click event to buttons
-incrementCount.addEventListener("click", handleIncrement);
-decrementCount.addEventListener("click", handleDecrement);
-  }
-Calcu()
+      // Variable to track count
+      var count = 0;
+
+      // Display initial count value
+      totalCount.innerHTML = count;
+      const handleIncrement = () => {
+        count++;
+        totalCount.innerHTML = count;
+      };
+      const handleDecrement = () => {
+        count--;
+        totalCount.innerHTML = count;
+      };
+      // Select increment and decrement buttons
+      const incrementCount = document.getElementById("increment");
+      const decrementCount = document.getElementById("decrement");
+
+      // Add click event to buttons
+      incrementCount.addEventListener("click", handleIncrement);
+      decrementCount.addEventListener("click", handleDecrement);
+    }
+    Calcu()
   </script>
-  
-  </body>
+
+</body>
+
 </html>

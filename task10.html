@@ -15,10 +15,13 @@
       <button type="submit" class="btn-back"><a href="task8.html">Previous</a></button>
       <button type="submit" class="btn-next"><a href="task10.html">Next</a></button>
       <div class="panel-container">
-        <div class="widget">
-          <p>Background color: <span class="color">-</span></p>
-          <button type="button" class="change-color">Change color</button>
-        </div>
+        <div id="controls">
+            <input type="number" min="1" max="100" step="1" />
+            <button type="button" data-create>Create</button>
+            <button type="button" data-destroy>Destroy</button>
+          </div>
+          
+          <div id="boxes"></div>
       </div>
     </div>
 
