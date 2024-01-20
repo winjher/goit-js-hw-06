@@ -18,21 +18,19 @@
         <input id="font-size-control" type="range" min="16" max="96" oninput="document.getElementById('fontsize').innerHTML = this.value + 'px'; 
         changeFontRange(this.value);"/>
         <br />
+        <label for="" id="fontsize"></label>
         <span id="text">Abracadabra!</span>
       
       </div>
     </div>
   </section>
-  <script src="js/tasks.js" type="text/javascript" charset="utf-8">
-
+  <script src="/storage/emulated/0/Documents/HW6-JavaScript/task4.js" type="text/javascript" charset="utf-8">
+  
   </script>
   <script type="text/javascript" charset="utf-8">
-    function changeFontSize(myFont) {
-      myFont = (size) => {
-        document.getElementById('text').setAttribute('style', 'font-size: ' + size + 'px');
-      }
-    }
-    changeFontSize()
+      const changeFontRange= (size) => {
+    document.getElementById('text').setAttribute('style', 'font-size: ' + size + 'px');
+  }
   </script>
 
 </body>
