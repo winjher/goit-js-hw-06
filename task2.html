@@ -15,35 +15,48 @@
             <button type="submit" class="btn-next"><a href="task3.html">Next</a></button>
             <div class="panel-container">
 
-                    <h2 class="" id="vegesTables">Vegetables</h2>
-                    <ul id="ingredients">
-                        <li class="veges" id="veges">Potatoes</li>
-                        <li class="veges" id="veges">Mushrooms</li>
-                        <li class="veges" id="veges">Garlic</li>
-                        <li class="veges" id="veges">Tomatoes</li>
-                        <li class="veges" id="veges">Herbs</li>
-                        <li class="veges" id="veges">Condiments</li>
+                            <div class="container-fluid card">
+            <button type="submit" class="btn-back"><a href="task1.html">Previous</a></button>
+            <button type="submit" class="btn-next"><a href="task3.html">Next</a></button>
+            <div class="panel-container">
 
-                    </ul>
-                    <button type="submit" onclick="Vegetables()">Click Here</button>
-                </div>
+                <ul id="ingredients"></ul>
+            </div>
+        </div>
 
     </section>
     <script src="js/tasks.js" type="text/javascript" charset="utf-8">
     </script>
-    <script type="text/javascript" charset="utf-8">
-        var myVeges = document.getElementById("vegetables").innerHTML;
-        function Vegetables() {
+      <script type="text/javascript" charset="utf-8">
+  const ingredients = [
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
+];
 
-            let vegesparent = document.getElementById("vegetables");
-            let vegeschild = document.getElementsByClassName(".veges");
-            let newEl = document.createElement("li");
-            newEl.innerHTML = "Papaya";
-            vegesparent.insertBefore(newEl, veges[0]);
-            console.log("myVeges");
-        }
-        Vegetables("")
-    </script>
+let ul = document.createElement("ul"); 
+
+for(let i=0; i<ingredients.length; i++){
+  let li = document.createElement("li"); 
+  li.textContent = ingredients[i];
+  ul.appendChild(li); 
+}
+document.getElementById("ingredients").appendChild(ul);
+window.onload=function(){
+    
+    let li=document.createElement('li');
+    li.innerHTML="Papaya";
+    
+    document.getElementById('ingredients').appendChild(li);
+    
+}
+
+
+
+  </script>
 
 </body>
 
