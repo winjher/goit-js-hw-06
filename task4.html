@@ -18,9 +18,9 @@
 
         <br />
         <div id="counter">
-          <button type="button" id="increment" data-action="decrement" onclick="Calcu()">-1</button>
+          <button class="btn-back" type="button" data-action="decrement" onclick="button1()">+1</button>
           <span id="value">0</span>
-          <button type="button" id="decrement" data-action="increment" onclick="Calcu()">+1</button>
+          <button class="btn-next" type="button" data-action="increment" onclick="button2()">-1</button>
         </div>
       </div>
     </div>
@@ -31,34 +31,18 @@
   <script src="js/tasks.js" type="text/javascript" charset="utf-8">
   </script>
 
-  <script>
+  <script type="text/javascript" charset="utf-8">
+var counterValue = 0;
 
-    function Calcu() {
-      // Select total count
-      const totalCount = document.getElementById("total-count");
+document.getElementById('value').innerHTML = counterValue;
 
-      // Variable to track count
-      var count = 0;
+function button1() {
+  document.getElementById('value').innerHTML = ++counterValue;
+}
 
-      // Display initial count value
-      totalCount.innerHTML = count;
-      const handleIncrement = () => {
-        count++;
-        totalCount.innerHTML = count;
-      };
-      const handleDecrement = () => {
-        count--;
-        totalCount.innerHTML = count;
-      };
-      // Select increment and decrement buttons
-      const incrementCount = document.getElementById("increment");
-      const decrementCount = document.getElementById("decrement");
-
-      // Add click event to buttons
-      incrementCount.addEventListener("click", handleIncrement);
-      decrementCount.addEventListener("click", handleDecrement);
-    }
-    Calcu()
+function button2() {
+  document.getElementById('value').innerHTML = --counterValue;
+}
   </script>
 
 </body>
