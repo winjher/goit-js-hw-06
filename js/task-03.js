@@ -27,3 +27,5 @@ const galleryMarkup = images
 console.log(galleryMarkup);
 
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup);
+
+
