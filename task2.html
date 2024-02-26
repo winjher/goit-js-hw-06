@@ -10,22 +10,17 @@
 
 <body>
     <section>
-        <div class="container-fluid card">
-            <button type="submit" class="btn-back"><a href="task1.html">Previous</a></button>
-            <button type="submit" class="btn-next"><a href="task3.html">Next</a></button>
-            <div class="panel-container">
+      <div class="container-fluid card">
+            <button type="submit" class="btn-back"><a href="index.html">Back</a></button>
 
-                            <div class="container-fluid card">
-            <button type="submit" class="btn-back"><a href="task1.html">Previous</a></button>
-            <button type="submit" class="btn-next"><a href="task3.html">Next</a></button>
-            <div class="panel-container">
+      <div class="panel-container">
 
                 <ul id="ingredients"></ul>
             </div>
         </div>
 
     </section>
-    <script src="js/tasks.js" type="text/javascript" charset="utf-8">
+    <script src="js/task-02.js" type="text/javascript" charset="utf-8">
     </script>
       <script type="text/javascript" charset="utf-8">
   const ingredients = [
@@ -37,22 +32,17 @@
   "Condiments",
 ];
 
-let ul = document.createElement("ul"); 
+const emptyUL = document.getElementById("ingredients"); 
+console.log(emptyUL);
 
-for(let i=0; i<ingredients.length; i++){
-  let li = document.createElement("li"); 
-  li.textContent = ingredients[i];
-  ul.appendChild(li); 
-}
-document.getElementById("ingredients").appendChild(ul);
-window.onload=function(){
+
+ingredients.foreach(ingredient =>{
+   const liofEmptyUL = document.createElement('li');
+   liofEmptyUL.textContent = ingredient;
     
-    let li=document.createElement('li');
-    li.innerHTML="Papaya";
-    
-    document.getElementById('ingredients').appendChild(li);
-    
-}
+});
+
+
 
 
 
