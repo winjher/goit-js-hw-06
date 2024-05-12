@@ -28,4 +28,9 @@ console.log(galleryMarkup);
 
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup);
 
+galleryList.style.listStyle = "none";
+galleryList.style.display = "flex";
+galleryList.style.gap = "30px";
+galleryList.style.justifyContent = "start";
+galleryList.style.alignItems = "start";
 
