@@ -1,45 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
-
-</head>
-
-<body>
-  <section>
-   <a href="index.html">Previous</a>
-        <div id="counter">
-          <button class="btn-back" type="button" data-action="decrement" onclick="button1()">+1</button>
-          <span id="value">0</span>
-          <button class="btn-next" type="button" data-action="increment" onclick="button2()">-1</button>
-        </div>
-      </div>
+    <div id="counter">
+      <button type="button" data-action="decrement">-1</button>
+      <span id="value">0</span>
+      <button type="button" data-action="increment">+1</button>
     </div>
 
-  </section>
-
-
-  <script src="js/tasks.js" type="text/javascript" charset="utf-8">
-  </script>
-
-  <script type="text/javascript" charset="utf-8">
-var counterValue = 0;
-
-document.getElementById('value').innerHTML = counterValue;
-
-function button1() {
-  document.getElementById('value').innerHTML = ++counterValue;
-}
-
-function button2() {
-  document.getElementById('value').innerHTML = --counterValue;
-}
-  </script>
-
-</body>
-
+    <script src="js/task-04.js" type="module"></script>
+  </body>
 </html>
