@@ -1,56 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Task 3</title>
-  <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
-</head>
+    <ul class="gallery"></ul>
 
-<body>
-  <section>
-    <a href="index.html">Go back</a>
-
-        <ul class="gallery">
-          <li class="images-list" id="image-container">Images</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <script src="js/tasks.js" type="text/javascript" charset="utf-8">
-  </script>
-  <script>
-
-    const images = [
-      {
-        url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-        alt: "White and Black Long Fur Cat",
-
-        url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-        alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-
-        url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-        alt: "Group of Horses Running",
-      },
-    ];
-
-
-    const container = document.getElementById('image-container');
-
-    for (let i = 0; i < images.length; i++) {
-
-      const img = document.createElement('img');
-
-      img.src = images[i];
-
-      container.appendChild(img);
-
-    }
-
-  </script>
-
-</body>
-
+    <script src="js/task-03.js" type="module"></script>
+  </body>
 </html>
