@@ -1,41 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="cs/taskstyle.css" type="text/css" media="all" />
-
-</head>
-
-<body>
-  <section>
-    <div class="container-fluid card">
-      <button type="submit" class="btn-back"><a href="task8.html">Previous</a></button>
-      <button type="submit" class="btn-next"><a href="task10.html">Next</a></button>
-      <div class="panel-container">
-        <div id="controls">
-            <input type="number" min="1" max="100" step="1" />
-            <button type="button" data-create>Create</button>
-            <button type="button" data-destroy>Destroy</button>
-          </div>
-          
-          <div id="boxes"></div>
-      </div>
-    </div>
-
-    <script src="js/tasks.js" type="text/javascript" charset="utf-8">
-
-    </script>
-    <script>
-      function getRandomHexColor() {
-        return `#${Math.floor(Math.random() * 16777215)
-          .toString(16)
-          .padStart(6, 0)}`;
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .item {
+        font-weight: 500;
       }
-    </script>
 
-</body>
+      .item:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
 
+    <ul id="ingredients"></ul>
+
+    <script src="js/task-02.js" type="module"></script>
+  </body>
 </html>
